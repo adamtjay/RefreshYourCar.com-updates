@@ -57,4 +57,14 @@
     }
   };
 
+  $(document).ready(function() {
+
+  // Add description text below main Product Categories header
+  let mainDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+  let categoriesHeader = $('.categories-header');
+  mainDescription.appendTo(categoriesHeader);
+  categoriesHeader.parent().css('margin-bottom','-15px');
+
+}) // end document ready
+
 })(jQuery);

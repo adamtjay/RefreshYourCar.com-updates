@@ -442,6 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/base\/_typography\.scss}line{font-family:\0000310}}
 h1 {
+  text-align:center;
   color: #00529b;
   margin-top: 0;
   line-height: 1em;
@@ -1496,8 +1497,9 @@ a#driven-survey {
   *zoom: 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\000035}}
 .page-category .view-content h3 {
-  border-bottom: solid 1px #eee;
-  font-size: 1.5em;
+  background:#ebf2ff;
+  font-size:2em;
+  color:#000;
   clear: left; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\0000310}}
 .page-category .category-item {
@@ -1839,3 +1841,27 @@ ul.appearance {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--twitter-feed\.scss}line{font-family:\0000313}}
   .twitter-status .name-handle a {
     text-decoration: none; }
+
+/* 2019 UX updates */
+.view-category .view-content { text-align:center; }
+.main-cat-desc {
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 200px 0px 200px;
+  color: #000;
+  letter-spacing: .5px;
+  line-height: 16px;
+ }
+.category-item { margin-bottom:15px; }
+.category-item .parent { display:none; }
+.categories-header { margin-bottom:-15px; }
+.category-item .category-name { text-align:left; padding-bottom:12px; }
+.category-item img { width:125px; height:125px; }
+.category-description {
+    height:230px;
+    text-align:left;
+    font-size:12px;
+    letter-spacing:.5px;
+    padding-right:20px;
+    padding-left:20px;
+   }
