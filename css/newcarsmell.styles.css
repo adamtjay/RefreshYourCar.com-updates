@@ -1498,6 +1498,7 @@ a#driven-survey {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\000035}}
 .page-category .view-content h3 {
   background:#ebf2ff;
+  margin-bottom:20px;
   font-size:2em;
   color:#000;
   clear: left; }
@@ -1858,7 +1859,7 @@ ul.appearance {
 .category-item .category-name { text-align:left; padding-bottom:12px; }
 .category-item img { width:125px; height:125px; }
 .category-description {
-    height:230px;
+    height:210px;
     text-align:left;
     font-size:12px;
     letter-spacing:.5px;
