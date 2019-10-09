@@ -1500,7 +1500,7 @@ a#driven-survey {
   margin-bottom:20px;
   font-size:2em;
   color:#000;
-  clear: left; }
+  clear: both; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\0000310}}
 .page-category .category-item {
   float: left;
@@ -1868,6 +1868,5 @@ ul.appearance {
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }
 .link-row a { font-size:1.2em; width:100%; display:block; }
-@media (max-width:600px) { .link-row a { float:right; padding:15px; } }
-
-.view-content h3 { background-color:#ebf2ff; padding:8px; border-radius:30px; }
+  @media (max-width:600px) { .link-row a { float:right; padding:15px; } }
+.view-content h3 { background-color:#e6f0ff; clear:both; padding:8px; border-radius:30px; }
