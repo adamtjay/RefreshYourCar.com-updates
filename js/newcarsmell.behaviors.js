@@ -59,11 +59,34 @@
 
   $(document).ready(function() {
 
-  // Add description text below main Product Categories header
-  let mainDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
-  let categoriesHeader = $('.categories-header');
-  mainDescription.appendTo(categoriesHeader);
-  categoriesHeader.parent().css('margin-bottom','-15px');
+    function getUrlEnding(url) {
+        var parts = url.split("/");
+        return (url.lastIndexOf('/') !== url.length - 1
+           ? parts[parts.length - 1]
+           : parts[parts.length - 2]);
+    }
+
+    // On only the /Categories/ page, add description to top + category links below rows
+    if (getUrlEnding(window.location.href) === 'categories') {
+        // Add description text below main Product Categories header
+        let mainDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+        let categoriesHeader = $('.categories-header');
+        mainDescription.appendTo(categoriesHeader);
+        categoriesHeader.parent().css('margin-bottom','-15px');
+
+        // After every 3rd category item, add a link to view that parent category page
+        let categoryItems = $('.category-item');
+        for (let i=0; i<categoryItems.length; i++) {
+          if ((i+1) % 3 === 0) {
+            // Get category name and generate the link to it
+            let current = $('.category-item').eq(i);
+            let categoryName = current.prev().prev().prev()[0].innerHTML;
+            let urlSlug = categoryName.replace(/\s+/g, '-').toLowerCase();
+            let categoryLink = $('<a href="/categories/' + urlSlug + '">View All ' + categoryName + ' products</a>');
+            categoryLink.insertAfter(current);
+          }
+        }
+    } // end if
 
 }) // end document ready
 
