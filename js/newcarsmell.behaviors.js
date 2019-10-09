@@ -84,6 +84,10 @@
             let urlSlug = categoryName.replace(/\s+/g, '-').toLowerCase();
             let categoryLink = $('<div class="link-row"><a href="/categories/' + urlSlug + '">View All ' + categoryName + ' Products</a></div>');
             categoryLink.insertAfter(current);
+            // Add link to category name which will direct to that category page
+            let category = current.prev().prev().prev();
+            category.wrap('<a href="/categories/' + urlSlug + '" style="text-decoration:none"></a>');
+
           }
         }
     } // end if
