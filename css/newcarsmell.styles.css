@@ -1853,13 +1853,12 @@ ul.appearance {
   line-height: 16px;
  }
 .category-item { padding:8px; }
-/* .category-item:hover  { padding:7px; border:1px solid #ebf2ff; } */
 .category-item .parent { display:none; }
 .categories-header { margin-bottom:-15px; }
-.category-item .category-name { text-align:left; padding-bottom:12px; }
-.category-item img { width:125px; height:125px; }
+.category-item .category-name { text-align:left; margin-bottom:12px; }
 .category-description {
-    height:210px;
+    height:auto;
+    min-height:160px;
     text-align:left;
     font-size:12px;
     letter-spacing:.5px;
@@ -1867,3 +1866,4 @@ ul.appearance {
     padding-left:10px;
    }
 .category-description a { text-decoration:none; }
+.link-row { width:100%; display:block; text-align:center; padding:10px; }

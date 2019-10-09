@@ -82,7 +82,7 @@
             let current = $('.category-item').eq(i);
             let categoryName = current.prev().prev().prev()[0].innerHTML;
             let urlSlug = categoryName.replace(/\s+/g, '-').toLowerCase();
-            let categoryLink = $('<a href="/categories/' + urlSlug + '">View All ' + categoryName + ' products</a>');
+            let categoryLink = $('<div class="link-row"><a href="/categories/' + urlSlug + '">View All ' + categoryName + ' Products</a></div>');
             categoryLink.insertAfter(current);
           }
         }
