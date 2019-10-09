@@ -1854,7 +1854,7 @@ ul.appearance {
  @media (min-width:700px) { .main-cat-desc { padding: 0px 300px 0px 300px; } }
 .category-item { padding:8px; }
 .category-item .parent { display:none; }
-.categories-header { margin-bottom:-15px; }
+.categories-header { color:#000; margin-bottom:-15px; }
 .category-item .category-name { text-align:left; margin-bottom:12px; }
 .category-description {
     height:auto;
@@ -1867,5 +1867,7 @@ ul.appearance {
    }
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }
-.link-row a { width:100%; display:block; }
+.link-row a { font-size:1.2em; width:100%; display:block; }
 @media (max-width:600px) { .link-row a { float:right; padding:15px; } }
+
+.view-content h3 { background-color:#ebf2ff; padding:8px; border-radius:30px; }
