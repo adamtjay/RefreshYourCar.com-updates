@@ -1858,7 +1858,7 @@ ul.appearance {
 .category-item .category-name { text-align:left; margin-bottom:12px; }
 .category-description {
     height:auto;
-    min-height:160px;
+    min-height:115px;
     text-align:left;
     font-size:12px;
     letter-spacing:.5px;
@@ -1870,3 +1870,5 @@ ul.appearance {
 .link-row a { font-size:1.2em; width:100%; display:block; }
   @media (max-width:600px) { .link-row a { float:right; padding:15px; } }
 .view-content h3 { background-color:#e6f0ff; clear:both; padding:8px; border-radius:30px; }
+.view-details-link { text-align:left; }
+.view-details-link a { text-decoration:none; }
