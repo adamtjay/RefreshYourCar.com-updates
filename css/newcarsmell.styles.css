@@ -1511,7 +1511,11 @@ a#driven-survey {
   @media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\0000310}}
     .page-category .category-item {
-      width: 33.3%; } }
+      width: 33.3%;
+      border:1px solid #ccc;
+      margin-left:-1px;
+      border-radius:10px;    
+      } }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\0000324}}
   .page-category .category-item .views-field-edit-term {
     position: absolute;
@@ -1845,30 +1849,32 @@ ul.appearance {
 /* 2019 UX updates */
 .view-category .view-content { text-align:center; }
 .main-cat-desc {
-  font-size: 14px;
-  text-align: center;
-  color: #000;
-  letter-spacing: .5px;
-  line-height: 16px;
+  font-size:14px;
+  text-align:center;
+  color:#000;
+  letter-spacing:.5px;
+  line-height:16px;
  }
  @media (min-width:700px) { .main-cat-desc { padding: 0px 300px 0px 300px; } }
 .category-item { padding:8px; }
 .category-item .parent { display:none; }
 .categories-header { color:#000; margin-bottom:-15px; }
-.category-item .category-name { text-align:left; margin-bottom:12px; }
+.category-item .category-name { text-align:center; margin-bottom:12px; }
 .category-description {
     height:auto;
-    min-height:115px;
+    min-height:110px;
     text-align:left;
     font-size:12px;
     letter-spacing:.5px;
     padding-right:10px;
     padding-left:10px;
    }
+  @media (max-width:600px) { .category-description { height:180px; min-height:180px; } }
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }
 .link-row a { font-size:1.2em; width:100%; display:block; }
   @media (max-width:600px) { .link-row a { float:right; padding:15px; } }
 .view-content h3 { background-color:#e6f0ff; clear:both; padding:8px; border-radius:30px; }
-.view-details-link { text-align:left; }
+.view-details-link { text-align:left; padding-left:10px; margin-top:-5px; margin-bottom:30px; }
 .view-details-link a { text-decoration:none; }
+.category-description div a p span { vertical-align:middle; }

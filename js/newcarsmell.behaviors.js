@@ -92,6 +92,14 @@
         }
     } // end if
 
+    if (window.location.href.indexOf("product/") > -1) {
+      if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
+            document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
+            document.querySelector('#block-views-product-page-images-block').style.setProperty('width','90%');
+    }
+
+    }
+
 }) // end document ready
 
 })(jQuery);
