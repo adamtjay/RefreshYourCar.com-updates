@@ -1512,9 +1512,6 @@ a#driven-survey {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\0000310}}
     .page-category .category-item {
       width: 33.3%;
-      border:1px solid #ccc;
-      margin-left:-1px;
-      border-radius:10px;    
       } }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_views--product-categories\.scss}line{font-family:\0000324}}
   .page-category .category-item .views-field-edit-term {
@@ -1869,7 +1866,10 @@ ul.appearance {
     padding-right:10px;
     padding-left:10px;
    }
-  @media (max-width:600px) { .category-description { height:180px; min-height:180px; } }
+  @media (max-width:600px) {
+    .category-item { width:100% !important; }
+    .category-description { height:100px; min-height:100px; }
+  }
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }
 .link-row a { font-size:1.2em; width:100%; display:block; }
@@ -1878,3 +1878,8 @@ ul.appearance {
 .view-details-link { text-align:left; padding-left:10px; margin-top:-5px; margin-bottom:30px; }
 .view-details-link a { text-decoration:none; }
 .category-description div a p span { vertical-align:middle; }
+.page-category .category-item {
+  border:1px solid #ccc;
+  margin-right:-1px;
+  border-radius:10px;
+}

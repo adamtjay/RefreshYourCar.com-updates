@@ -65,7 +65,6 @@
            ? parts[parts.length - 1]
            : parts[parts.length - 2]);
     }
-
     // On only the /Categories/ page, add description to top + category links below rows
     if (getUrlEnding(window.location.href) === 'categories') {
         // Add description text below main Product Categories header
@@ -92,6 +91,23 @@
         }
     } // end if
 
+    // Only on subcategory pages, replace default header with breadcrumb-type nav & add description section
+    if (window.location.href.indexOf("categories/") > -1) {
+
+      let navSection = $('h1');
+      $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>').insertAfter(navSection)
+      $('h1').remove();
+
+      // Add description text below main Product Category header
+      let categoryDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+      let categoryHeader = $('.view-category h3');
+      categoryDescription.insertAfter(categoryHeader);
+      categoryHeader.parent().css('margin-bottom','-15px');
+      categoryHeader.css('margin-top','10px');
+
+    }
+
+    // Only on product detail pages, if there is only 1 image then hide the thumbnail/resize the main img
     if (window.location.href.indexOf("product/") > -1) {
       if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
             document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
