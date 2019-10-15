@@ -98,10 +98,27 @@
         breadcrumbLink.insertAfter(navSection);
         $('h1').remove();
 
-        // Add description text below main Product Category header
-        let categoryDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+        // Subcategory pages - Adding description text below main Product Category header
         let categoryHeader = $('.view-category h3');
-        categoryDescription.insertAfter(categoryHeader);
+        let category = categoryHeader[0].innerHTML;
+        let categoryDescription = '';
+        switch (category) {
+          case 'Clip to Vent':
+              categoryDescription = $('<p class="main-cat-desc">Clip to Vent category description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+              categoryDescription.insertAfter(categoryHeader);
+              break;
+          case 'Hanging':
+              categoryDescription = $('<p class="main-cat-desc">Hanging category description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+              categoryDescription.insertAfter(categoryHeader);
+              break;
+          case 'Hidden and Other':
+              categoryDescription = $('<p class="main-cat-desc">Hidden and Other category description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+              categoryDescription.insertAfter(categoryHeader);
+              break;
+          default:
+              break;
+        }
+
         categoryHeader.parent().css('margin-bottom','-15px');
         categoryHeader.css('margin-top','10px');
         categoryHeader.css('margin-bottom','10px');

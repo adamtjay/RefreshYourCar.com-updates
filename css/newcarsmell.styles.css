@@ -1873,7 +1873,7 @@ ul.appearance {
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }
 .link-row a { font-size:1.2em; width:100%; display:block; }
-  @media (max-width:600px) { .link-row a { float:right; padding:15px; } }
+  @media (max-width:600px) { .link-row a { float:right; padding:15px; margin-bottom:20px; } }
 .view-content h3 { background-color:#e6f0ff; clear:both; padding:8px; border-radius:30px; }
 .view-details-link { text-align:left; padding-left:10px; margin-top:-5px; margin-bottom:30px; }
 .view-details-link a { text-decoration:none; }
