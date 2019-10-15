@@ -93,18 +93,19 @@
 
     // Only on subcategory pages, replace default header with breadcrumb-type nav & add description section
     if (window.location.href.indexOf("categories/") > -1) {
+        let navSection = $('h1');
+        let breadcrumbLink = $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>');
+        breadcrumbLink.insertAfter(navSection);
+        $('h1').remove();
 
-      let navSection = $('h1');
-      $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>').insertAfter(navSection)
-      $('h1').remove();
-
-      // Add description text below main Product Category header
-      let categoryDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
-      let categoryHeader = $('.view-category h3');
-      categoryDescription.insertAfter(categoryHeader);
-      categoryHeader.parent().css('margin-bottom','-15px');
-      categoryHeader.css('margin-top','10px');
-
+        // Add description text below main Product Category header
+        let categoryDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+        let categoryHeader = $('.view-category h3');
+        categoryDescription.insertAfter(categoryHeader);
+        categoryHeader.parent().css('margin-bottom','-15px');
+        categoryHeader.css('margin-top','10px');
+        categoryHeader.css('margin-bottom','10px');
+        $('.view-id-category').css('margin-top','10px');
     }
 
     // Only on product detail pages, if there is only 1 image then hide the thumbnail/resize the main img
