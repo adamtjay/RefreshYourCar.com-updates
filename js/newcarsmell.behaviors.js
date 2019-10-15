@@ -132,10 +132,12 @@
         let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="#" style="text-decoration:none;">Test</a></div>');
         breadcrumbLink.insertBefore($('.l-main'));
 
-        // if there is only 1 image then hide the thumbnail/resize the main img
+        // if there is only 1 image then hide the thumbnail/resize the main img, change other related styles
         if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
               document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
               document.querySelector('#block-views-product-page-images-block').style.setProperty('width','90%');
+              document.querySelector('.flexslider .slides img').style.setProperty('width','80%');
+              document.querySelector('.flexslider .slides img').style.setProperty('margin-left','15%');
       }
     } // end if on Product Details page
 
