@@ -1868,7 +1868,7 @@ ul.appearance {
    }
   @media (max-width:600px) {
     .category-item { width:100% !important; }
-    .category-description { height:100px; min-height:100px; }
+    .category-description { height:120px; min-height:120px; }
   }
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }

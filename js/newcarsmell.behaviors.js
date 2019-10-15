@@ -91,8 +91,9 @@
         }
     } // end if
 
-    // Only on subcategory pages, replace default header with breadcrumb-type nav & add description section
+    // * Subcategory pages
     if (window.location.href.indexOf("categories/") > -1) {
+        // Subcategory pages - Breadcrumb
         let navSection = $('h1');
         let breadcrumbLink = $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>');
         breadcrumbLink.insertAfter(navSection);
@@ -104,35 +105,41 @@
         let categoryDescription = '';
         switch (category) {
           case 'Clip to Vent':
-              categoryDescription = $('<p class="main-cat-desc">Clip to Vent category description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+              categoryDescription = $('<p class="main-cat-desc">Clip to Vent description goes here - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
               categoryDescription.insertAfter(categoryHeader);
               break;
           case 'Hanging':
-              categoryDescription = $('<p class="main-cat-desc">Hanging category description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+              categoryDescription = $('<p class="main-cat-desc">Hanging description goes here - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
               categoryDescription.insertAfter(categoryHeader);
               break;
           case 'Hidden and Other':
-              categoryDescription = $('<p class="main-cat-desc">Hidden and Other category description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
+              categoryDescription = $('<p class="main-cat-desc">Hidden and Other description goes here - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
               categoryDescription.insertAfter(categoryHeader);
               break;
           default:
               break;
-        }
-
+        } // end switch statement
         categoryHeader.parent().css('margin-bottom','-15px');
         categoryHeader.css('margin-top','10px');
         categoryHeader.css('margin-bottom','10px');
         $('.view-id-category').css('margin-top','10px');
-    }
+        $('.main-cat-desc').css('margin-bottom','30px');
+    } // end if on Subcategories page
 
-    // Only on product detail pages, if there is only 1 image then hide the thumbnail/resize the main img
+    // * Product detail pages
     if (window.location.href.indexOf("product/") > -1) {
-      if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
-            document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
-            document.querySelector('#block-views-product-page-images-block').style.setProperty('width','90%');
-    }
+        // (WIP) Product Detail pages - Breadcrumb
+        // let navSection = $('h1');
+        // let breadcrumbLink = $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>');
+        // breadcrumbLink.insertAfter(navSection);
+        // $('h1').remove();
 
-    }
+        // if there is only 1 image then hide the thumbnail/resize the main img
+        if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
+              document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
+              document.querySelector('#block-views-product-page-images-block').style.setProperty('width','90%');
+      }
+    } // end if on Product Details page
 
 }) // end document ready
 
