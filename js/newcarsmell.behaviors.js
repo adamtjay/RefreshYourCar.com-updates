@@ -95,7 +95,7 @@
     if (window.location.href.indexOf("categories/") > -1) {
         // Subcategory pages - Breadcrumb
         let navSection = $('h1');
-        let breadcrumbLink = $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>');
+        let breadcrumbLink = $('<div style="text-transform:uppercase;color:#027FC4;"><a href="/categories" style="text-decoration:none;">All Products</a></div>');
         breadcrumbLink.insertAfter(navSection);
         $('h1').remove();
 
@@ -129,10 +129,8 @@
     // * Product detail pages
     if (window.location.href.indexOf("product/") > -1) {
         // (WIP) Product Detail pages - Breadcrumb
-        // let navSection = $('h1');
-        // let breadcrumbLink = $('<a href="/categories" style="text-decoration:none;text-transform:uppercase;color:#027FC4">All Products</a>');
-        // breadcrumbLink.insertAfter(navSection);
-        // $('h1').remove();
+        let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="#" style="text-decoration:none;">Test</a></div>');
+        breadcrumbLink.insertBefore($('.l-main'));
 
         // if there is only 1 image then hide the thumbnail/resize the main img
         if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {

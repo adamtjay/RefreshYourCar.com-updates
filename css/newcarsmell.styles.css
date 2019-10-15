@@ -269,8 +269,8 @@ a.button {
   .has-sidebar-first .l-content,
   .has-sidebar-second .l-content,
   .has-two-sidebars .l-content {
-    width: 66.10169%;
-    float: left;
+    width: 100%;
+    float: none;
     margin-right: 1.69492%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/base\/_layout\.scss}line{font-family:\0000373}}
   .has-sidebar-first .l-region--sidebar-first,
@@ -348,8 +348,8 @@ a.button {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/base\/_layout\.scss}line{font-family:\00003129}}
   .has-sidebar-first .l-content {
-    width: 74.68354%;
-    float: right;
+    width: 100%;
+    float: none;
     margin-right: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/base\/_layout\.scss}line{font-family:\00003132}}
   .has-sidebar-first .l-region--sidebar-first {
