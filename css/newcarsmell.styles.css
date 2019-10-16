@@ -893,7 +893,8 @@ ul.tabs--primary {
 .node-type-product .l-region--highlighted {
   overflow: hidden;
   *zoom: 1;
-  background-color: #f1fafe; }
+  /* background-color: #f1fafe;  */
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\0000316}}
 .node-type-product .flexslider {
   margin: 15px;

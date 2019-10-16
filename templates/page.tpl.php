@@ -104,13 +104,13 @@
   <div class="l-main">
   <div class="l-constrained">
     <div class="l-content" role="main">
-      <?php print render($page['highlighted']); ?>
 
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1><?php print $title; ?></h1>
       <?php endif; ?>
+      <?php print render($page['highlighted']); ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>

@@ -135,10 +135,14 @@
         // if there is only 1 image then hide the thumbnail/resize the main img, change other related styles
         if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
               document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
-              document.querySelector('#block-views-product-page-images-block').style.setProperty('width','90%');
-              document.querySelector('.flexslider .slides img').style.setProperty('width','80%');
-              document.querySelector('.flexslider .slides img').style.setProperty('margin-left','15%');
+              document.querySelector('#block-views-product-page-images-block').style.setProperty('width','70%');
+              document.querySelector('.flexslider .slides img').style.setProperty('width','100%');
       }
+      let maintitle = document.querySelector('h1');
+      maintitle.style.setProperty('padding','0 0 20px 10px');
+      maintitle.style.setProperty('text-align','left');
+      maintitle.style.setProperty('font-size','2.3em');
+
     } // end if on Product Details page
 
 }) // end document ready
