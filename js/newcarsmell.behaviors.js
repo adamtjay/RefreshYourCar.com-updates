@@ -140,8 +140,6 @@
         // if there is only 1 image then hide the thumbnail/resize the main img, change other related styles
         if (document.querySelectorAll('.view-product-page-images .pager-item').length === 1) {
               document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
-              document.querySelector('#block-views-product-page-images-block').style.setProperty('width','70%');
-              document.querySelector('.flexslider .slides img').style.setProperty('width','100%');
       }
       let maintitle = document.querySelector('h1');
       maintitle.style.setProperty('padding','0 0 20px 15px');

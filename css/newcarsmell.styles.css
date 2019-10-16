@@ -990,19 +990,20 @@ ul.tabs--primary {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\00003113}}
   .product-image-pager li {
     display: block;
-    height: 150px;
+    /* height: 150px; */
     width: auto;
-    margin: 10px 15px 10px 10px; }
+    /* margin: 10px 15px 10px 10px;  */
+  }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\00003119}}
   .block--views-product-page-images-block {
     width: 75%;
-    float: left; }
+    float: right; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\00003123}}
   .block--views-product-page-images-block-1 {
-    width: 25%;
-    float: right; } }
+    width: 12%;
+    float: left; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\00003130}}
 .view-mode-product_scent_description .field--name-field-image {
   float: left;
@@ -1884,3 +1885,5 @@ ul.appearance {
   margin-right:-1px;
   border-radius:10px;
 }
+#block-views-product-page-images-block .block__content { margin-left:-100px; }
+.flexslider .slides img { width:80%; }
