@@ -129,7 +129,12 @@
     // * Product detail pages
     if (window.location.href.indexOf("product/") > -1) {
         // (WIP) Product Detail pages - Breadcrumb
-        let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="#" style="text-decoration:none;">Test</a></div>');
+        let location = window.location.href.split('/');
+        let baseUrl = "/categories/";
+        let newUrl = baseUrl + location[location.length-2];
+        console.log(newUrl);
+
+        let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="' + newUrl + '" style="text-decoration:none;">'+ newUrl + '</a></div>');
         breadcrumbLink.insertBefore($('.l-main'));
 
         // if there is only 1 image then hide the thumbnail/resize the main img, change other related styles
@@ -139,7 +144,7 @@
               document.querySelector('.flexslider .slides img').style.setProperty('width','100%');
       }
       let maintitle = document.querySelector('h1');
-      maintitle.style.setProperty('padding','0 0 20px 10px');
+      maintitle.style.setProperty('padding','0 0 20px 15px');
       maintitle.style.setProperty('text-align','left');
       maintitle.style.setProperty('font-size','2.3em');
 
