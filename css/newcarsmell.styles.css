@@ -1885,5 +1885,8 @@ ul.appearance {
   margin-right:-1px;
   border-radius:10px;
 }
-#block-views-product-page-images-block .block__content { margin-left:-100px; }
-.flexslider .slides img { width:80%; }
+@media (min-width:700px) {
+  .flexslider .slides img { width:80%; }
+  #block-views-product-page-images-block .block__content { margin-left:-100px; margin-top:-80px; }
+}
+.flex-next, .flex-prev { display:none !important; }
