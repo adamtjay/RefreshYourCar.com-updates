@@ -131,10 +131,12 @@
         // (WIP) Product Detail pages - Breadcrumb
         let location = window.location.href.split('/');
         let baseUrl = "/categories/";
-        let newUrl = baseUrl + location[location.length-2];
+        let endUrl = location[location.length-2];
+        let newUrl = baseUrl + endUrl;
         console.log(newUrl);
 
-        let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="' + newUrl + '" style="text-decoration:none;">'+ newUrl + '</a></div>');
+        let catString = endUrl.split('-').join(' ');
+        let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="' + newUrl + '" style="text-decoration:none;">'+ catString + '</a></div>');
         breadcrumbLink.insertBefore($('.l-main'));
 
         // if there is only 1 image then hide the thumbnail/resize the main img, change other related styles
