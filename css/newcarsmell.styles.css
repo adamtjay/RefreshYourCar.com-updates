@@ -1890,3 +1890,18 @@ ul.appearance {
   #block-views-product-page-images-block .block__content { margin-left:-100px; margin-top:-80px; }
 }
 .flex-next, .flex-prev { display:none !important; }
+.product-detail-title {
+  text-align:left;
+  font-family:arial;
+  color:#000;
+  letter-spacing:1px;
+  font-size:2.3em;
+  padding:0 0 20px 15px;
+}
+.product-detail-subtitle {
+  font-family:arial;
+  color:#000;
+  letter-spacing:1px;
+  font-size:1.1em;
+  font-style:normal;
+}

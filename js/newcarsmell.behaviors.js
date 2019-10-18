@@ -144,10 +144,9 @@
               document.querySelector('.view-product-page-images .pager-item').style.setProperty('display','none');
       }
       let maintitle = document.querySelector('h1');
-      maintitle.style.setProperty('padding','0 0 20px 15px');
-      maintitle.style.setProperty('text-align','left');
-      maintitle.style.setProperty('font-size','2.3em');
-
+      maintitle.classList.add('product-detail-title');
+      let subtitle = document.querySelector('.field--name-field-sub-title .field__item');
+      subtitle.classList.add('product-detail-subtitle')
     } // end if on Product Details page
 
 }) // end document ready
