@@ -133,7 +133,6 @@
         let baseUrl = "/categories/";
         let endUrl = location[location.length-2];
         let newUrl = baseUrl + endUrl;
-        console.log(newUrl);
 
         let catString = endUrl.split('-').join(' ');
         let breadcrumbLink = $('<div style="margin-top:15px;margin-left:20px;display:block;text-transform:uppercase;color:#027FC4"><a href="/categories" style="text-decoration:none;">All Products</a> > <a href="' + newUrl + '" style="text-decoration:none;">'+ catString + '</a></div>');
@@ -148,12 +147,14 @@
       let subtitle = document.querySelector('.field--name-field-sub-title .field__item');
       subtitle.classList.add('product-detail-subtitle');
       let leftDetails = document.querySelector('.l-region--highlighted');
-      leftDetails.classList.add('details-left');
+      leftDetails.classList.add('product-detail-left');
 
-      // Fix Product Detail view fields layout 
+      // Fix Product Detail view fields layout
       let rightDetails = $('.field--type-text-with-summary');
+      rightDetails.get(0).classList.add('product-detail-description');
       rightDetails.insertAfter(leftDetails);
-      $(subtitle).insertBefore(rightDetails, null);
+      // $(subtitle).insertBefore(rightDetails, null);
+      $(subtitle).appendTo(maintitle);
 
     } // end if on Product Details page
 

@@ -1901,9 +1901,12 @@ ul.appearance {
 .product-detail-subtitle {
   font-family:arial;
   color:#000;
-  letter-spacing:1px;
-  font-size:1.1em;
+  letter-spacing:1.15px;
+  font-size:.5em;
   font-style:normal;
-  clear:none;
+  padding:10px 0 0 2px;
+  white-space:nowrap;
+  margin-bottom:-5px;
 }
-.details-left { width:65%; float:left; }
+.product-detail-left { width:65%; float:left; }
+/* .product-detail-description { padding-top:1%; } */
