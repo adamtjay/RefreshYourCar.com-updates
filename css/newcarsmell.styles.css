@@ -1892,21 +1892,19 @@ ul.appearance {
 .flex-next, .flex-prev { display:none !important; }
 .product-detail-title {
   text-align:left;
-  font-family:arial;
-  color:#000;
   letter-spacing:1px;
   font-size:2.3em;
   padding:0 0 20px 15px;
 }
 .product-detail-subtitle {
-  font-family:arial;
-  color:#000;
+  width:80%;
   letter-spacing:1.15px;
   font-size:.5em;
-  font-style:normal;
+  font-style:italic;
+  color:#22b24c;
   padding:10px 0 0 2px;
-  white-space:nowrap;
   margin-bottom:-5px;
 }
+/* @media (max-width:600px) { .product-detail-subtitle {  white-space:nowrap; } } */
 .product-detail-left { width:65%; float:left; }
 /* .product-detail-description { padding-top:1%; } */

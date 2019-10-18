@@ -153,7 +153,6 @@
       let rightDetails = $('.field--type-text-with-summary');
       rightDetails.get(0).classList.add('product-detail-description');
       rightDetails.insertAfter(leftDetails);
-      // $(subtitle).insertBefore(rightDetails, null);
       $(subtitle).appendTo(maintitle);
 
     } // end if on Product Details page
