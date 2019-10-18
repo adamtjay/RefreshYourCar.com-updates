@@ -146,7 +146,15 @@
       let maintitle = document.querySelector('h1');
       maintitle.classList.add('product-detail-title');
       let subtitle = document.querySelector('.field--name-field-sub-title .field__item');
-      subtitle.classList.add('product-detail-subtitle')
+      subtitle.classList.add('product-detail-subtitle');
+      let leftDetails = document.querySelector('.l-region--highlighted');
+      leftDetails.classList.add('details-left');
+
+      // Fix Product Detail view fields layout 
+      let rightDetails = $('.field--type-text-with-summary');
+      rightDetails.insertAfter(leftDetails);
+      $(subtitle).insertBefore(rightDetails, null);
+
     } // end if on Product Details page
 
 }) // end document ready
