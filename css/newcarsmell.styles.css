@@ -960,6 +960,8 @@ ul.tabs--primary {
   padding: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\0000373}}
   .field--name-field-related-products li {
+    width:30%;
+    float:left;
     list-style: none;
     margin: 10px;
     padding: 0; }
@@ -1911,6 +1913,6 @@ ul.appearance {
 @media (max-width:600px) { .product-detail-left { margin-bottom:0px; } }
 .product-detail-description div div p { padding-right:10px; }
 @media (max-width:600px) { .product-image-pager li { padding:0 !important; } }
-.available-formats { margin-top:10%; }
-.available-formats ul { margin-top:0; list-style-type:none; }
-@media (min-width:700px) { .available-formats ul { text-align:right; padding-right:30%; } }
+.available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; }
+.available-formats ul { margin-top:0; list-style-type:none; font-weight:400; list-style-type:none; }
+/* .field--name-field-related-products li .field--name-field-function { display:none; } */
