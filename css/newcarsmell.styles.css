@@ -1907,6 +1907,10 @@ ul.appearance {
   margin-bottom:-5px;
 }
 @media (min-width:700px) { .product-detail-subtitle { width:80%; } }
-/* @media (max-width:600px) { .product-detail-subtitle {  white-space:nowrap; } } */
 .product-detail-left { width:65%; float:left; }
-/* .product-detail-description { padding-top:1%; } */
+@media (max-width:600px) { .product-detail-left { margin-bottom:0px; } }
+.product-detail-description div div p { padding-right:10px; }
+@media (max-width:600px) { .product-image-pager li { padding:0 !important; } }
+.available-formats { margin-top:10%; }
+.available-formats ul { margin-top:0; list-style-type:none; }
+@media (min-width:700px) { .available-formats ul { text-align:right; padding-right:30%; } }
