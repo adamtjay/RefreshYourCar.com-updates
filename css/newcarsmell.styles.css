@@ -1915,4 +1915,11 @@ ul.appearance {
 @media (max-width:600px) { .product-image-pager li { padding:0 !important; } }
 .available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; }
 .available-formats ul { margin-top:0; list-style-type:none; font-weight:400; list-style-type:none; }
-/* .field--name-field-related-products li .field--name-field-function { display:none; } */
+.field--name-field-related-products .field--name-title { padding-bottom:15px; }
+.view-mode-product_scent_description {
+  background:linear-gradient(#fff, #e6f0ff);
+  border-radius:5px;
+  padding:20px;
+  width:95%;
+  margin-top:15px; }
+.view-mode-product_scent_description img { min-width:100px; max-height:100px; }
