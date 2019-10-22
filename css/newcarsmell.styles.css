@@ -1890,7 +1890,7 @@ ul.appearance {
   border-radius:10px;
 }
 @media (min-width:700px) {
-  .flexslider .slides img { width:95%; }
+  .flexslider .slides img { width:95%; border-radius:20px; }
   #block-views-product-page-images-block .block__content { margin-left:-100px; margin-top:-20px; }
 }
 .flex-next, .flex-prev { display:none !important; }
@@ -1920,9 +1920,9 @@ ul.appearance {
       justify-content: center;
     }
   }
-.product-detail-description div div p { padding:10px 10px 0 0; }
+.product-detail-description div div p { padding:10px 10px 0 20px; }
   @media (max-width:600px) { .product-image-pager li { padding:0 !important; } }
-.available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; }
+.available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; padding-left:20px; }
 .available-formats ul { margin-top:0; list-style-type:none; font-weight:400; list-style-type:none; }
 .field--name-field-related-products .field--name-title { padding-bottom:15px; }
 .view-mode-product_scent_description {
@@ -1934,3 +1934,11 @@ ul.appearance {
 }
 .view-mode-product_scent_description img { min-width:100px; max-height:100px; }
  @media (max-width:600px) { .view-mode-product_scent_description img { margin-top:10px; vertical-align:middle; } }
+
+.node--product--full h3 { letter-spacing:1.2px; color:#000 !important; padding-top:10px; padding-bottom:10px; }
+.featured-scents-title {
+  font-size:1.5em !important;
+ }
+
+/* .view-mode-other_scents img { display:none; }
+.field--name-field-other-scents li { display:inline-flex; width:100%; text-align:left; padding-left:20px; color:#000; } */

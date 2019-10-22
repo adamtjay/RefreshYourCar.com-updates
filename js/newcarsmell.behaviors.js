@@ -148,6 +148,10 @@
       subtitle.classList.add('product-detail-subtitle');
       let leftDetails = document.querySelector('.l-region--highlighted');
       leftDetails.classList.add('product-detail-left');
+      let featuredTitle = document.querySelector('.node--product--full .group-middle > h3');
+      if (featuredTitle.innerHTML.split(' ').join('').indexOf('FeaturedScents') > -1) {
+        featuredTitle.classList.add('featured-scents-title');
+      }
 
       // Fix Product Detail view fields layout
       let rightDetails = $('.field--type-text-with-summary');
