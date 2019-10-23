@@ -159,6 +159,11 @@
       rightDetails.insertAfter(leftDetails);
       $(subtitle).appendTo(maintitle);
 
+      // Add disclaimer text to Other Scents
+      let otherscents = $('.field--name-field-other-scents');
+      let disclaimer = $('<p class="scents-disclaimer"><sup>*</sup>Not all scents are available in all formats</p>');
+      disclaimer.insertAfter(otherscents);
+
     } // end if on Product Details page
 
 }) // end document ready
