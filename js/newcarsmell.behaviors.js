@@ -149,7 +149,7 @@
       let leftDetails = document.querySelector('.l-region--highlighted');
       leftDetails.classList.add('product-detail-left');
       let featuredTitle = document.querySelector('.node--product--full .group-middle > h3');
-      if (featuredTitle.innerHTML.split(' ').join('').indexOf('FeaturedScents') > -1) {
+      if (featuredTitle && featuredTitle.innerHTML.split(' ').join('').indexOf('FeaturedScents') > -1) {
         featuredTitle.classList.add('featured-scents-title');
       }
 
