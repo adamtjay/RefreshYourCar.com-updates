@@ -152,6 +152,10 @@
       if (featuredTitle && featuredTitle.innerHTML.split(' ').join('').indexOf('FeaturedScents') > -1) {
         featuredTitle.classList.add('featured-scents-title');
       }
+      let sectionTitles = document.querySelectorAll('h3.field-label');
+      for (let x in sectionTitles) {
+        if (sectionTitles[x].nodeType === 1) { sectionTitles[x].classList.add('section-title-hdr') }
+      }
 
       // Fix Product Detail view fields layout
       let rightDetails = $('.field--type-text-with-summary');

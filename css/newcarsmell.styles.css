@@ -1938,6 +1938,7 @@ ul.appearance {
 .view-mode-product_scent_description img { min-width:100px; max-height:100px; }
  @media (max-width:600px) { .view-mode-product_scent_description img { margin-top:10px; vertical-align:middle; } }
 
+.section-title-hdr { padding-bottom:15px; border-bottom:1px solid #ccc !important; }
 .node--product--full h3 { font-size:1.3em !important; letter-spacing:1.2px; color:#000 !important; padding-top:10px; padding-bottom:10px; }
 .featured-scents-title {
   font-size:1.5em !important;
@@ -1948,5 +1949,6 @@ ul.appearance {
   height:180px;
   padding:15px;
 }
+  @media (max-width:600px) { .node--related-products { height:auto; } }
 .scents-disclaimer { padding-left:20px; color:#a9a9a9; font-style:italic; margin-top:25px; }
   @media (max-width:600px) { .scents-disclaimer { padding-left:10px; } }
