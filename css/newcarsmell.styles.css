@@ -976,6 +976,7 @@ ul.tabs--primary {
     color: #00529b; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/aegir\/platforms\/lp2\/ryc759\/sites\/refreshyourcar\.com\/themes\/newcarsmell\/sass\/components\/_node--product\.scss}line{font-family:\0000383}}
   .field--name-field-related-products a {
+    font-size:1.1em;
     text-decoration: none; }
 
 @media (max-width: 767px) {
@@ -1885,6 +1886,7 @@ ul.appearance {
 .view-content h3 { background-color:#e6f0ff; clear:both; padding:8px; border-radius:30px; }
 .view-details-link { text-align:left; padding-left:10px; margin-top:-5px; margin-bottom:30px; }
 .view-details-link a { text-decoration:none; }
+.category-description p { line-height:15px; color:rgb(0, 0, 0); font-family:Arial; font-size:13px; white-space:pre-wrap; vertical-align:middle; }
 .category-description div a p span { vertical-align:middle; }
 
 .breadcrumb-divider { padding:0 7px 0 7px; }
@@ -1918,13 +1920,13 @@ ul.appearance {
   @media (min-width:700px) {
     .product-detail-description {
       min-height: 350px;
-      max-height: 400px;
       display: flex;
+      /* max-height: 400px;
       align-items: center;
-      justify-content: center;
+      justify-content: center; */
     }
   }
-.product-detail-description div div p { padding:10px 10px 0 20px; }
+.product-detail-description div div p { padding:10px 10px 0 10px; }
   @media (max-width:600px) { .product-image-pager li { padding:0 !important; } }
 .available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; padding-left:20px; }
 .available-formats ul { margin-top:0; list-style-type:none; font-weight:400; list-style-type:none; }
@@ -1938,11 +1940,9 @@ ul.appearance {
 .view-mode-product_scent_description img { min-width:100px; max-height:100px; }
  @media (max-width:600px) { .view-mode-product_scent_description img { margin-top:10px; vertical-align:middle; } }
 
-.section-title-hdr { padding-bottom:15px; border-bottom:1px solid #ccc !important; }
-.node--product--full h3 { font-size:1.3em !important; letter-spacing:1.2px; color:#000 !important; padding-top:10px; padding-bottom:10px; }
-.featured-scents-title {
-  font-size:1.5em !important;
- }
+.section-title-hdr { padding-bottom:15px !important; border-bottom:1px solid #ccc !important; }
+.node--product--full h3 { font-size:1.4em !important; letter-spacing:1.2px; color:#000 !important; padding-top:10px; padding-bottom:10px; }
+.featured-scents-title { font-size:1.5em !important; }
 .node--related-products {
   border:1px solid #ccc;
   border-radius:20px;
@@ -1950,5 +1950,4 @@ ul.appearance {
   padding:15px;
 }
   @media (max-width:600px) { .node--related-products { height:auto; } }
-.scents-disclaimer { padding-left:20px; color:#a9a9a9; font-style:italic; margin-top:25px; }
-  @media (max-width:600px) { .scents-disclaimer { padding-left:10px; } }
+.scents-disclaimer { padding-left:10px; color:#a9a9a9; font-style:italic; margin-top:25px; }
