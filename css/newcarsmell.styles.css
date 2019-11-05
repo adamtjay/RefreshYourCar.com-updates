@@ -1868,7 +1868,7 @@ ul.appearance {
 .category-item .category-name { text-align:center; margin-bottom:12px; }
 .category-description {
     height:auto;
-    min-height:110px;
+    min-height:130px;
     text-align:left;
     font-size:12px;
     letter-spacing:.5px;
@@ -1879,6 +1879,7 @@ ul.appearance {
     .category-item { width:100% !important; }
     .category-description { height:120px; min-height:120px; }
   }
+.category-item img { max-height:165px; width:auto; }
 .category-description a { text-decoration:none; }
 .link-row { width:100%; display:block; text-align:center; padding:10px; }
 .link-row a { font-size:1.2em; width:100%; display:block; }
@@ -1926,9 +1927,13 @@ ul.appearance {
       justify-content: center; */
     }
   }
+.product-detail-description { margin-right:25px; }
 .product-detail-description div div p { padding:10px 10px 0 10px; }
-  @media (max-width:600px) { .product-image-pager li { padding:0 !important; } }
-.available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; padding-left:20px; }
+  @media (max-width:600px) {
+    .product-image-pager li { padding:0 !important; }
+    .product-detail-description { margin-right:5px; }
+   }
+.available-formats { font-weight:700; letter-spacing:.8px; list-style:outside; }
 .available-formats ul { margin-top:0; list-style-type:none; font-weight:400; list-style-type:none; }
 .field--name-field-related-products .field--name-title { padding-bottom:15px; }
 .view-mode-product_scent_description {
@@ -1947,7 +1952,7 @@ ul.appearance {
   border:1px solid #ccc;
   border-radius:20px;
   height:180px;
-  padding:15px;
+  padding:25px;
 }
-  @media (max-width:600px) { .node--related-products { height:auto; } }
+  @media (max-width:600px) { .node--related-products { padding:10px; height:200px; } }
 .scents-disclaimer { padding-left:10px; color:#a9a9a9; font-style:italic; margin-top:25px; }
