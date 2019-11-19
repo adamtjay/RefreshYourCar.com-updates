@@ -67,11 +67,6 @@
     }
     // On only the /Categories/ page, add description to top + category links below rows
     if (getUrlEnding(window.location.href) === 'categories') {
-        // Add description text below main Product Categories header
-        let mainDescription = $('<p class="main-cat-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>');
-        let categoriesHeader = $('.categories-header');
-        mainDescription.appendTo(categoriesHeader);
-        categoriesHeader.parent().css('margin-bottom','-15px');
 
         // After every 3rd category item, add a link to view that parent category page
         let categoryItems = $('.category-item');
