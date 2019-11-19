@@ -1900,7 +1900,6 @@ ul.appearance {
   .flexslider .slides img { width:95%; border-radius:20px; }
   #block-views-product-page-images-block .block__content { margin-left:-100px; margin-top:-20px; }
 }
-.flex-next, .flex-prev { display:none !important; }
 .product-detail-title {
   letter-spacing:1px;
   font-size:2.3em;
@@ -1955,4 +1954,4 @@ ul.appearance {
   padding:25px;
 }
   @media (max-width:600px) { .node--related-products { padding:10px; height:200px; } }
-.scents-disclaimer { padding-left:10px; color:#a9a9a9; font-style:italic; margin-top:25px; }
+.scents-disclaimer { padding-top:0px !important; padding-left:10px !important; color:#a9a9a9; font-style:italic; margin-top:25px; }
