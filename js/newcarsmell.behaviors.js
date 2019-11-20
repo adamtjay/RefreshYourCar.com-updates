@@ -67,6 +67,9 @@
     }
     // On only the /Categories/ page, add description to top + category links below rows
     if (getUrlEnding(window.location.href) === 'categories') {
+        // Add description text below main Product Categories header
+        let categoriesHeader = $('.categories-header');
+        categoriesHeader.parent().css('margin-bottom','-15px');
 
         // After every 3rd category item, add a link to view that parent category page
         let categoryItems = $('.category-item');
@@ -115,7 +118,7 @@
       let maintitle = document.querySelector('h1');
       maintitle.classList.add('product-detail-title');
       let subtitle = document.querySelector('.field--name-field-sub-title .field__item');
-      subtitle.classList.add('product-detail-subtitle');
+      subtitle ? subtitle.classList.add('product-detail-subtitle') : '';
       let leftDetails = document.querySelector('.l-region--highlighted');
       leftDetails.classList.add('product-detail-left');
       let featuredTitle = document.querySelector('.node--product--full .group-middle > h3');
